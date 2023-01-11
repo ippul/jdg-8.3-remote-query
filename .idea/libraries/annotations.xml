@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="annotations">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/target/generated-sources/annotations" />
+    </SOURCES>
+  </library>
+</component>

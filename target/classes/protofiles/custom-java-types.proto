@@ -1,0 +1,33 @@
+// File name: custom-java-types.proto
+// Generated from : org.infinispan.tutorial.simple.remote.query.QuerySchemaBuilder
+
+syntax = "proto2";
+
+
+
+message BigDecimal {
+   
+   optional bytes unscaledValue = 1;
+   
+   optional int32 scale = 2 [default = 0];
+}
+
+
+message Address {
+   
+   optional string streetName = 1;
+   
+   optional string postcode = 2;
+   
+   optional string city = 3;
+}
+
+
+message Person {
+   
+   optional string firstName = 1;
+   
+   optional string lastName = 2;
+   
+   optional BigDecimal aNumber = 3;
+}

@@ -1,0 +1,11 @@
+org/infinispan/tutorial/simple/remote/query/Address$___Marshaller_37cb9a74ed80502513fa0d0ff240737360a4a69b2ea9e2ef99c125bc86a36842.class
+org/infinispan/tutorial/simple/remote/query/QuerySchemaBuilderImpl.class
+org/infinispan/tutorial/simple/connect/Infinispan.class
+org/infinispan/tutorial/simple/remote/query/Person$___Marshaller_d724ca8d0dfd2e76f07ed9821eb2599a5b005e3f069f339bc6f46381c943d5da.class
+org/infinispan/tutorial/simple/remote/query/Address.class
+org/infinispan/protostream/types/java/math/BigDecimalAdapter$___Marshaller_387cf0f5d856c535708fca20677729ae9ef34a5578a6ec0e1ef4c3ddc3eae7f8.class
+org/infinispan/tutorial/simple/remote/query/QuerySchemaBuilder.class
+protofiles/custom-java-types.proto
+org/infinispan/tutorial/simple/remote/query/Person.class
+org/infinispan/tutorial/simple/remote/query/InfinispanRemoteQuery.class
+META-INF/services/org.infinispan.protostream.SerializationContextInitializer
