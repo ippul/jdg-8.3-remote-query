@@ -12,21 +12,10 @@ import org.infinispan.query.dsl.QueryFactory;
 import org.infinispan.tutorial.simple.connect.Infinispan;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import static org.infinispan.query.remote.client.ProtobufMetadataManagerConstants.PROTOBUF_METADATA_CACHE_NAME;
 
-/**
- * The Remote Query simple tutorial.
- *
- * Infinispan Server includes a default property realm that requires
- * authentication. Create some credentials before you run this tutorial.
- *
- * @author Katia Aresti, karesti@redhat.com
- */
 public class InfinispanRemoteQuery {
 
    public static void main(String[] args) throws Exception {

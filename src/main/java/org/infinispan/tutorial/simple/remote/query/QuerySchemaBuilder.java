@@ -9,13 +9,10 @@ import org.infinispan.protostream.types.java.math.BigDecimalAdapter;
         org.infinispan.protostream.types.java.CommonTypes.class,
         org.infinispan.protostream.types.java.CommonContainerTypes.class
     },
-    
-    // schemaPackageName = "org.ippul.test", 
     schemaFilePath = "protofiles",
     schemaFileName = "custom-java-types.proto",
     includeClasses = {
         Person.class,
-        Address.class,
         BigDecimalAdapter.class
     })
 public interface QuerySchemaBuilder extends SerializationContextInitializer {
