@@ -1,0 +1,26 @@
+# ignore eclipse files
+.project
+.classpath
+*.settings*
+*.ipr
+.idea
+*.iws
+*.iml
+
+# maven build results
+target
+test-output
+**/dependency-reduced-pom.xml
+
+#eclipse output
+bin
+
+#preview output
+README*.html
+
+# javascript
+node_modules
+
+#eap-cluster-app
+eap-cluster-app/server.log
+eap-cluster-app/setupOutput
