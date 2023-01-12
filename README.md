@@ -2,7 +2,7 @@
 
 ### Configure Red Hat Data grid
 
-- Download Red Hat Data grid 8.3.1 from customer portal
+- Download Red Hat Data grid 8.4 from customer portal
 
 - Create a new user using the following command
 ```shell
