@@ -6,7 +6,7 @@
 
 - Create a new user using the following command
 ```shell
-$DATAGRID_HOME/bin/cli.sh user create admin1 -p "password" -g admin,Admin
+$DATAGRID_HOME/bin/cli.sh user create admin -p "password" -g admin,Admin
 ```
 
 - Update Data grid configuration $DATAGRID_HOME/server/conf/infinispan.xml

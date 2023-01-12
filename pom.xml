@@ -7,8 +7,8 @@
     <name>jdg-8.3-remote-query</name>
 
     <properties>
-       <version.infinispan>13.0.10.Final-redhat-00001</version.infinispan>
-       <version.protostream>4.4.3.Final-redhat-00001</version.protostream>
+       <version.infinispan>14.0.2.Final-redhat-00001</version.infinispan>
+       <version.protostream>4.5.0.Final-redhat-00002</version.protostream>
        <version.spring.boot>2.5.4</version.spring.boot>
        <version.spring.session>2.5.2</version.spring.session>
        <version.micrometer.registry.prometheus>1.5.2</version.micrometer.registry.prometheus>

@@ -1,14 +1,8 @@
 package org.infinispan.tutorial.simple.remote.query;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Date;
-import java.util.List;
-
 import org.infinispan.protostream.annotations.ProtoField;
 import org.infinispan.protostream.annotations.ProtoName;
-import org.infinispan.protostream.types.java.collections.ArrayListAdapter;
 
 /**
  * This class is annotated with the infinispan Protostream support annotations.
