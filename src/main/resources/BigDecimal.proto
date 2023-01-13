@@ -1,0 +1,7 @@
+package java.math;
+
+/* @Indexed */
+message BigDecimal {
+    /* @Field */
+    optional string value = 1;
+}
