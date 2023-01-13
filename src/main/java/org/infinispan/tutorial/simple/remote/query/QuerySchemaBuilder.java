@@ -2,7 +2,6 @@ package org.infinispan.tutorial.simple.remote.query;
 
 import org.infinispan.protostream.SerializationContextInitializer;
 import org.infinispan.protostream.annotations.AutoProtoSchemaBuilder;
-import org.infinispan.protostream.types.java.math.BigDecimalAdapter;
 
 @AutoProtoSchemaBuilder(
     // dependsOn = {
