@@ -24,21 +24,26 @@ public class InfinispanRemoteQuery {
 
    public static void main(String[] args) throws Exception {
       ConfigurationBuilder builder = Infinispan.connectionConfig();
+      System.out.println("0");
       builder.addContextInitializers(new QuerySchemaBuilderImpl(), new CommonContainerTypesSchema() /* , new CommonTypesSchema()*/);
       RemoteCacheManager client = new RemoteCacheManager(builder.build());
       addPersonSchema(client);
       RemoteCache<String, Person> peopleCache = client.getCache(Infinispan.TUTORIAL_CACHE_NAME);
       peopleCache.clear();
+      System.out.println("1");
       Person person = new Person();
       person.setFirstName("Oihana");
       person.setaNumber(new BigDecimal("10000000000"));
       person.setLastName("Rossignol");
       peopleCache.put("1", person);
+      System.out.println("2");
       QueryFactory queryFactory = Search.getQueryFactory(peopleCache);
       Query<Person> query = queryFactory.create("FROM Person p WHERE p.aNumber.value = :aNumber");
       query.setParameter("aNumber","10000000000");
       List<Person> result = query.execute().list();
+      System.out.println("3");
       System.out.println("New API" + result);
+      System.out.println("4");
       client.stop();
    }
 
