@@ -1,0 +1,10 @@
+org/ippul/infinispan/example/BigDecimalCustomAdapter$___Marshaller_95e2886840788c8eea397353eaf1a9b0eb77e9e195034fdf2e005bd157e37a4b.class
+org/ippul/infinispan/example/Person.class
+org/ippul/infinispan/example/QuerySchemaBuilder.class
+org/ippul/infinispan/example/custom/BigDecimalMarshaller.class
+org/ippul/infinispan/example/Person$___Marshaller_baa674020c08513c80478fc01d84b29e53ab0d32f826c1204e40ba3027cc8ffb.class
+org/ippul/infinispan/example/QuerySchemaBuilderImpl.class
+org/ippul/infinispan/example/custom/BigDecimalInitializer.class
+protofiles/custom-java-types.proto
+org/ippul/infinispan/example/BigDecimalCustomAdapter.class
+META-INF/services/org.infinispan.protostream.SerializationContextInitializer
