@@ -24,7 +24,6 @@ $DATAGRID_HOME/bin/cli.sh user create admin -p "password" -g admin,Admin
         <security>
             <authorization/>
         </security>
-        <replicated-cache mode="SYNC" name="REPL_TEST_CACHE" />
     </cache-container>
 
     <server xmlns="urn:infinispan:server:13.0">
