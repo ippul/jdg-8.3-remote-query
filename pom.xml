@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.infinispan.tutorial.simple</groupId>
     <artifactId>jdg-8.3-remote-query</artifactId>
@@ -7,11 +9,11 @@
     <name>jdg-8.3-remote-query</name>
 
     <properties>
-       <version.infinispan>14.0.2.Final-redhat-00001</version.infinispan>
-       <version.protostream>4.5.0.Final-redhat-00002</version.protostream>
-       <version.spring.boot>2.5.4</version.spring.boot>
-       <version.spring.session>2.5.2</version.spring.session>
-       <version.micrometer.registry.prometheus>1.5.2</version.micrometer.registry.prometheus>
+        <version.infinispan>14.0.6.Final-redhat-00001</version.infinispan>
+        <version.protostream>4.6.0.Final-redhat-00001</version.protostream>
+        <version.spring.boot>2.5.4</version.spring.boot>
+        <version.spring.session>2.5.2</version.spring.session>
+        <version.micrometer.registry.prometheus>1.5.2</version.micrometer.registry.prometheus>
     </properties>
 
     <dependencyManagement>
@@ -23,21 +25,19 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-           <dependency>
-               <groupId>javax.cache</groupId>
-               <artifactId>cache-api</artifactId>
-               <version>1.1.0.redhat-1</version>
-           </dependency>
+            <dependency>
+                <groupId>javax.cache</groupId>
+                <artifactId>cache-api</artifactId>
+                <version>1.1.0.redhat-1</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <dependencies>
-
         <dependency>
             <groupId>org.infinispan</groupId>
             <artifactId>infinispan-client-hotrod</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.infinispan</groupId>
             <artifactId>infinispan-remote-query-client</artifactId>
@@ -55,6 +55,18 @@
             <groupId>org.infinispan.protostream</groupId>
             <artifactId>protostream-types</artifactId>
             <version>${version.protostream}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.7.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.7.2</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
     <build>
@@ -77,20 +89,20 @@
             </plugins>
         </pluginManagement>
         <plugins>
-      <plugin>
-        <groupId>org.commonjava.maven.plugins</groupId>
-        <artifactId>project-sources-maven-plugin</artifactId>
-        <version>1.0</version>
-        <executions>
-          <execution>
-            <id>project-sources-archive</id>
-            <phase>initialize</phase>
-            <goals>
-              <goal>archive</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
+            <plugin>
+                <groupId>org.commonjava.maven.plugins</groupId>
+                <artifactId>project-sources-maven-plugin</artifactId>
+                <version>1.0</version>
+                <executions>
+                    <execution>
+                        <id>project-sources-archive</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>archive</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
@@ -105,13 +117,14 @@
                     <executable>java</executable>
                     <arguments>
                         <argument>-Djava.net.preferIPv4Stack=true</argument>
-                        <argument>-Djava.util.logging.config.file=src/main/resources/logging.properties</argument>
+                        <argument>
+                            -Djava.util.logging.config.file=src/main/resources/logging.properties</argument>
                         <argument>-classpath</argument>
                         <classpath />
                         <argument>org.infinispan.tutorial.simple.remote.query.InfinispanRemoteQuery</argument>
                     </arguments>
                 </configuration>
             </plugin>
-    </plugins>
+        </plugins>
     </build>
 </project>

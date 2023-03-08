@@ -1,7 +1,6 @@
-package org.infinispan.tutorial.simple.remote.query;
+package org.ippul.infinispan.example;
 
 import java.math.BigDecimal;
-import java.math.BigInteger;
 
 import org.infinispan.protostream.annotations.ProtoAdapter;
 import org.infinispan.protostream.annotations.ProtoFactory;
